@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Shop;
+use App\Models\Owner;
 
 class Shop extends Model
 {
@@ -20,6 +20,6 @@ class Shop extends Model
 
     public function owner()
     {
-        return $this->belongTo(Owner::class);
+        return $this->belongsTo(Owner::class);
     }
 }
